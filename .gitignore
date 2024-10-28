@@ -1,0 +1,13 @@
+# Android files
+.gradle/
+/local.properties
+*.iml
+/build/
+/captures/
+/output.json
+
+# Node modules
+node_modules/
+
+# Firebase credentials
+firebasefirestore.json

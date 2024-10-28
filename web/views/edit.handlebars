@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <title>Editar Livro</title>
+    <link rel="stylesheet" href="/styles.css">
+</head>
+<body class="bg-gray-100">
+    <div class="container mx-auto p-6">
+        <h2 class="text-2xl font-bold mb-4">Editar Livro</h2>
+        <form action="/books/{{book.id}}" method="POST" class="bg-white p-6 rounded-lg shadow space-y-4">
+            <input type="text" name="title" class="w-full border border-gray-300 p-2 rounded" value="{{book.title}}" required>
+            <input type="text" name="author" class="w-full border border-gray-300 p-2 rounded" value="{{book.author}}" required>
+            <textarea name="description" class="w-full border border-gray-300 p-2 rounded">{{book.description}}</textarea>
+            <button type="submit" class="bg-blue-500 hover:bg-blue-600 text-white py-2 px-4 rounded">Atualizar Livro</button>
+        </form>
+        <a href="/books" class="text-blue-500 hover:underline">Voltar para a lista de livros</a>
+    </div>
+</body>
+</html>
